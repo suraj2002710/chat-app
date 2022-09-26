@@ -1,0 +1,38 @@
+/* .logo{
+    width: 430px;
+    font-size: .9rem;
+}
+.logo i{
+    font-size: 1.2rem;
+    margin-left: 290px;
+} 
+.container{
+    width: 430px;
+    height: 81vh;
+}
+*/
+body{
+    scroll-behavior: smooth;
+}
+.send .btn{
+    /* width: inherit; */
+}
+.send input{
+    font-size: 20px;
+    height: 33px; 
+    width: auto
+}
+.logo i{
+    
+} /*logo complete*/
+
+.userbox{
+    width: inherit;
+    display: none;
+ }
+ .container .chatbox{
+    /* height: 100%; */
+    /* width: inherit; */
+    width: inherit;
+    font-size: .9rem;
+}
