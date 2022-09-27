@@ -47,7 +47,7 @@ var chatbox=document.querySelector('.chatbox')
                mes:mesg
           }
           appendmessage(msg,'outgoing')
-
+          scrolltobottom()
           // send to server
           socket.emit("message",msg)
      }
@@ -68,9 +68,14 @@ var chatbox=document.querySelector('.chatbox')
      socket.on("message",(msg)=>{
           tp.innerHTML=""
           appendmessage(msg,'incoming')
-          console.log(msg)
+          // console.log(msg)
+          scrolltobottom()
      })
 
+     function scrolltobottom(){
+          messagearea.scrollTop=messagearea.scrollHeight
+      }
+      
      // user typing
      textarea.addEventListener('keypress',(e)=>{
           socket.emit("typing",nam)
